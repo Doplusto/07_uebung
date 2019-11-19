@@ -25,27 +25,29 @@ Wie hoch ist die Datenrate des Kanals aus Aufgabe a) maximal, falls es sich um e
 **Lösung**
 
 a)
-Die maximale Datenrate D berechnet man nach dem Nyquist Theorem:  $D= 2*B*log_2⁡ V $.
+Die maximale Datenrate D berechnet man nach dem Nyquist Theorem:  D= 2*B*log_2⁡ V .
 
-Es ergibt sich: D=(2∙7MHz∙log_2⁡ (4)  [bits]=28 Mbit/s=3,5MB/s 
+Es ergibt sich: D=(2∙7MHz∙log_2⁡ (4)) [bits/s]=28 Mbit/s=3,5MB/s 
 
 Da jedes Symbol 2 Bit an Information repräsentiert, ist die Baudrate halb so groß wie die Bitrate, also 14 MBaud.
 
 b)
 Prinzipiell könnte ein unverrauschter Kanal eine beliebige Menge an Informationen transportieren. 
-Gemäß Shannon gilt: : $D= 2*B*log_2⁡(V  [bits/s])$
+Gemäß Nyquist gilt: D= 2*B*log_2⁡(V) [bits/s]
 
 Demnach muss man für hohe Datenraten lediglich die Anzahl der Symbole, also V erhöhen. Dadurch kodiert man viel Information pro Symbol. 
 
 Anhand der Nyquist-Formel ermittelt man: 
 
-$$D= 2*B*log_2⁡(V) -> D/2B= log_2⁡(V) -> 2^(D/2B)=V$$
+D= 2*B*log_2⁡(V) -> D/2B= log_2⁡(V) -> 2^(D/2B)=V
 
 Durch Einsetzen der Werte D=8kbit/s und D=64kbit/s erhält man: 
 
-	$$V=2^((8 [kbit]/s)/(2∙4kHz))=2$$
+	V=2^((8 [kbit]/s)/(2∙4kHz))=2
+	
      bzw. 
-	$$V=2^((64[kbit]/s)/(2∙4kHz))=256$$
+	
+	V=2^((64[kbit]/s)/(2∙4kHz))=256
 
 Bei 2 bzw. 256 verschiedenen Symbolen könnte man also diese theoretischen Datenraten erreichen. In der Praxis kann man aber nicht beliebig viele Symbole einsetzen. Aufgrund von Rauschen würde sich ein Empfänger dann sehr schwer tun, die einzelnen Symbole auseinanderzuhalten.
 
@@ -55,7 +57,7 @@ Das Shannon-Theorem gibt eine zusätzliche obere Grenze für die erreichbare Dat
 Zunächst rechnet man Dezibel in ein absolutes Verhältnis d=S/N  um: 
 30 = 10 log10 d  →  3 =  log10 d  →  d = 1000
 
-Shannon: $D= B*log_2⁡(1+S/N)[bits] = 7MHz∙log_2⁡(1+1000) [bits/s]=70 Mbit/s$
+Shannon: D= B*log_2⁡(1+S/N)[bits] = 7MHz∙log_2⁡(1+1000) [bits/s]=70 Mbit/s
 
 Hinweis: Ohne Rauschen ließe sich die Datenrate beliebig steigern, wenn man sehr viele Symbole definieren würde. Nach Shannon ist die Anzahl der Symbole bei gegebenem S/N Ratio aber in der Theorie begrenzt. Der Noise muss berücksichtigt werden, damit die Symbole noch unterscheidbar bleiben 
 
