@@ -55,7 +55,7 @@ c)
 Das Shannon-Theorem gibt eine zusätzliche obere Grenze für die erreichbare Datenrate vor, falls ein Kanal verrauscht ist.  
 
 Zunächst rechnet man Dezibel in ein absolutes Verhältnis d=S/N  um: 
-30 = 10 log10 d  →  3 =  log10 d  →  d = 1000
+30 = 10 log(d)  →  3 =  log(d)  →  d = 1000
 
 Shannon: D= B*log_2⁡(1+S/N)[bits] = 7MHz∙log_2⁡(1+1000) [bits/s]=70 Mbit/s
 
